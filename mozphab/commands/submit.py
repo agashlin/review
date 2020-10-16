@@ -469,7 +469,7 @@ def submit(repo, args):
     if args.message and any([c for c in commits if not c["rev-id"]]):
         logger.warning(
             "Warning: --message works with updates only, and will not\n"
-            "be result in a comment on new revisions."
+            "result in a comment on new revisions."
         )
 
     telemetry.metrics.mozphab.submission.preparation_time.stop()
